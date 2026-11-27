@@ -4,3 +4,24 @@ POST /register
   "email": "john@doe.com",
   "password": "password"
 }
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+}
+POST /todos
+{
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, and bread"
+}
+{
+  "message": "Unauthorized"
+}
+{
+  "id": 1,
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, and bread"
+}
+PUT /todos/1
+{
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, bread, and cheese"
+}
