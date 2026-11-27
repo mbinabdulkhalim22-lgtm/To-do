@@ -4,3 +4,61 @@ POST /register
   "email": "john@doe.com",
   "password": "password"
 }
+POST /todos
+{
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, and bread"
+}
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+}
+POST /login
+{
+  "email": "john@doe.com",
+  "password": "password"
+}
+https://roadmap.sh/projects/todo-list-api{
+  "message": "Unauthorized"
+}
+{
+  "id": 1,
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, and bread"
+}{
+  "message": "Forbidden"
+}
+PUT /todos/1
+{
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, bread, and cheese"
+}
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Buy groceries",
+      "description": "Buy milk, eggs, bread"
+    },
+    {
+      "id": 2,
+      "title": "Pay bills",
+      "description": "Pay electricity and water bills"
+    }
+  ],
+  "page": 1,
+  "limit": 10,
+  "total": 2
+}
+
+{
+  "message": "Forbidden"
+}
+{
+  "id": 1,
+  "title": "Buy groceries",
+  "description": "Buy milk, eggs, bread, and cheese"
+}
+DELETE /todos/1
+GET /todos?page=1&limit=10
+
+
