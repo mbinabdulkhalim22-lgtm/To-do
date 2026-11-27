@@ -29,8 +29,6 @@ PUT /todos/1
   "title": "Buy groceries",
   "description": "Buy milk, eggs, bread, and cheese"
 }
-DELETE /todos/1GET /todos?page=1&limit=10
-{
   "data": [
     {
       "id": 1,
